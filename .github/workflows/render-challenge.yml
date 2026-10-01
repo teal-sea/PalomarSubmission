@@ -72,7 +72,7 @@ jobs:
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
         with:
-          repository: PalomarRegistry/PalomarSubmission
+          repository: ${{ github.repository }}
           ref: ${{ github.workflow_sha }}
           persist-credentials: false
       - id: resolve
